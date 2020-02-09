@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+  <script defer src="exchange.js"></script>
+  <title>Exchange</title>
+</head>
+<body>  
+<input name="yousend" value="10.00">
+<select name="currency">
+  <option value="EUR">EUR</option>
+  <option value="CHF">CHF</option>
+  <option value="CZK">CZK</option>
+  <option value="GBP">GBP</option>
+  <option value="USD">USD</option>
+</select>
+<input name="youget" value="0" readonly>
+<select name="currency_purse">
+  <option value="bitcoin-btc">Bitcoin BTC</option>
+  <option value="paypal-usd">Paypal USD</option>
+  <option value="paypal-eur">Paypal EUR</option>
+  <option value="perfect-money-usd">Perfect Money USD</option>
+  <option value="perfect-money-eur">Perfect Money EUR</option>
+  <option value="litecoin-ltc">Litecoin LTC</option>
+  <option value="ethereum-eth">Ethereum ETH</option>
+  <option value="webmoney-usd">Webmoney USD</option>
+  <option value="webmoney-eur">Webmoney EUR</option>
+  <option value="dash-dash">Dash DASH</option>
+</select>
+</body>
+</html>

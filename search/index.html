@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="main.css">
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+  <script defer src="main.js"></script>
+  <title>06/02</title>
+</head>
+<body>
+<form action="" method="post">
+  <div class="ahglxpv">
+  <div>
+    <div class="pbzmrdp">
+      Exchange MoynKey <span id="currency-main">EUR</span> to <span class="payment-method">Bitcoin</span> <span class="currency-payment">BTC</span>
+    </div>
+  </div>
+
+  <div class="xsfzlyh">
+    <div class="aemspgn">
+      <div class="glepria">
+        <input placeholder="1234 5678 9012 3456" name="pin">
+        <p class="validate">
+          <!-- This field is required  -->
+        </p>
+      </div>
+      <div class="glepria">
+        <input name="value" value="10.00" maxlength="14">
+      </div>
+      <div class="glepria">
+        <select name="currency">
+          <option value="eur">EUR</option>
+          <option value="usd">USD</option>
+          <option value="chf">CHF</option>
+        </select>
+      </div>
+    </div>
+    <div class="aemspgn">
+      <div class="glepria">
+        <select name="payment-method">
+          <option value="Paypal" selected>Paypal</option>
+          <option value="Bitcoin">Bitcoin</option>
+          <option value="Litecoin">Litecoin</option>
+          <option value="Webmoney">Webmoney</option>
+          <option value="DASH">DASH</option>
+          <option value="Perfect Money">Perfect Money</option>
+          <option value="Advanced Cash">Advanced Cash</option>
+        </select>
+                <p>
+          <!-- This field is required  -->
+        </p>
+      </div>
+      <div class="glepria">
+        <select name="payment-currency">
+          <option value="usd">USD</option>
+          <option value="eur">EUR</option>
+        </select>
+      </div>
+    </div>
+    <div class="aemspgn">
+      <div class="glepria">
+        <input placeholder="111111111" name="payment-wallet">
+        <p class="validate">
+          <!-- This field is required  -->
+        </p>
+      </div>
+      <div class="glepria">
+        <input placeholder="Enter your e-mail" name="email">
+        <p class="validate">
+          <!-- This field is required  -->
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="rlstpdp">
+    <div class="lbqcdpo">
+      Rate exchange: 1 <span id="currency">EUR</span> - <span id="all-rate">0.98765432</span> <span class="currency-payment">BTC</span>
+    </div>
+    <div class="lbqcdpo">
+      Total exchange: <span id="rate">5.98765432</span> <span class="payment-method">Bitcoin</span> <span class="currency-payment">BTC</span>
+    </div>
+  </div>
+  <div class="bqrhnge">
+    <button type="submit" class="payment_btn">start</button>
+  </div>
+  </div>
+</form>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="main.css">
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+  <script defer src="main.js"></script>
+  <title>Moyn</title>
+</head>
+<body>
+<form action="send.php" method="post">
+  <div class="erpddk">
+    <h2>Exchange MoynKey</h2>
+    <div class="e8q27d">
+      <div class="ebkree">
+        <div class="esga7d"> 
+          <div class="e3m8cx" style="display: none;"> 
+            <div class="efcncv e4svts"> Error form! </div> 
+          </div>
+          <div class="ezed3v">
+            <label> MoynKey PIN: </label>
+            <input placeholder="1234 5678 9012 3456" name="pin">
+            <p class="validate"> <!-- This field is required\ Please enter name --> </p>
+          </div>
+          <div class="ezed3v">
+            <label> Value: </label>
+            <input name="value" value="10.00" maxlength="14">
+            <p class="validate"> </p>
+          </div>
+          <div class="ezed3v">
+            <label> Currency: </label>
+            <select name="currency">
+              <option value="eur">EUR</option>
+              <option value="usd">USD</option>
+              <option value="chf">CHF</option>
+            </select>
+            <p> <!-- This field is required\ Please enter name  --></p>
+          </div>
+          <div class="ezed3v">
+            <label> Payment method: </label>
+            <select name="payment-method">
+              <option selected="">Paypal</option>
+              <option value="Bitcoin">Bitcoin</option>
+              <option value="Litecoin">Litecoin</option>
+              <option value="Webmoney">Webmoney</option>
+              <option value="DASH">DASH</option>
+              <option value="Perfect Money">Perfect Money</option>
+              <option value="Advanced Cash">Advanced Cash</option>
+            </select>
+            <p> <!-- This field is required\ Please enter name  --></p>
+          </div>
+          <div class="ezed3v">
+            <label> Currency: </label>
+            <select name="payment-currency">
+              <option value="usd">USD</option>
+              <option value="eur">EUR</option>
+            </select>
+            <p> <!-- This field is required\ Please enter name  --></p>
+          </div>
+          <div class="ezed3v">
+            <label> Your Wallet: </label>
+            <input placeholder="111111111" name="payment-wallet">
+            <p  class="validate"> <!-- This field is required\ Please enter name  --></p>
+          </div>
+          <div class="ezed3v">
+            <label> Your E-mail: </label>
+            <input placeholder="Enter your e-mail" name="email">
+            <p  class="validate"> <!-- This field is required\ Please enter name  --></p>
+          </div>
+        </div>
+      </div>
+      <div class="eotgte">
+        <div class="etdnep"> 
+            <div class="e3bed4"> Payment Information </div>
+            <div class="e2lv4s"> 
+              <div class="etqpbm"> You send: </div>
+              <div class="eg73tl"> MoynKey 
+              <span id="moyn-key">10.00</span>
+              <span id="currency-main">EUR</span> </div>
+            </div>
+            <div class="e2lv4s"> 
+              <div class="etqpbm"> Exchange rate: </div>
+              <div class="eg73tl"> 1 
+              <span id="currency">eur</span> - 
+              <span id="all-rate">12.6748933</span>
+              <span class="currency-payment">btc</span> </div>
+            </div>
+            <div class="e2lv4s"> 
+              <div class="etqpbm"> Reserve money: </div>
+              <div class="eg73tl"> 
+              <span id="reserve">34.8568855</span> 
+              <span class="currency-payment">btc</span> </div>
+            </div>
+            <div class="e2lv4s"> 
+              <div class="etqpbm"> You get: </div>
+              <div class="eg73tl"> 
+                <span id="payment-method">Bitcoin</span> 
+                <span id="rate">0.85688551</span>
+                <span class="currency-payment">eur</span> </div>
+            </div>      
+            <div class="e2lv4s"> 
+              <div class="etqpbm"> Estimated Transaction time: </div>
+              <div class="eg73tl"> ~ 3-15 minutes </div>
+            </div>
+            <div class="e2lv4s"> <button type="submit">Exchange</button> </div>
+        </div> 
+      </div>
+    </div>
+  </div>
+</form>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
